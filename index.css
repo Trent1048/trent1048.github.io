@@ -23,3 +23,11 @@ nav li {
 	margin: 4px;
 	text-align: center;
 }
+nav ul {
+	z-index: 1;
+	list-style-type: none;
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
