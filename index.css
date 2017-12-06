@@ -22,10 +22,12 @@ nav li {
 	padding: 4px;
 	margin: 4px;
 	text-align: center;
+	list-style: none;
 }
 nav ul {
 	z-index: 1;
 	list-style-type: none;
+	list-style: none;
 	display: inline-block;
 	position: fixed;
 	top: 0;
