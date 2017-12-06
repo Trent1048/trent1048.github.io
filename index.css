@@ -1,0 +1,25 @@
+body {
+  font-family: "Helvetica", Sans-Serif;
+  font-size: 20px;
+}
+nav a {
+	text-decoration: none;
+}
+nav a:link {
+	color: white;
+}
+nav a:visited {
+	color: #ffffff;
+}
+nav a:hover {
+	color: #CBC5CF;
+}
+nav li {
+	float: left;
+	width: 150px;
+	background-color: black;
+	border: 1px solid white;
+	padding: 4px;
+	margin: 4px;
+	text-align: center;
+}
