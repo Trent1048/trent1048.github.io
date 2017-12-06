@@ -23,7 +23,7 @@ nav li {
 	margin: 4px;
 	text-align: center;
 }
-nav ul {
+nav ol {
 	z-index: 1;
 	list-style-type: none;
 	display: inline-block;
