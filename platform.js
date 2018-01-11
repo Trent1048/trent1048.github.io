@@ -10,7 +10,7 @@ var playerImage;
 var obstacleImage;
 
 function preload() {
-	//playerImage = loadImage("trent1048.github.io/ship.png");
+	playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
 	obstacleImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
 }
 
@@ -31,7 +31,7 @@ function setup() {
 	}
 
 	player = createSprite(100, height-75, 50, 50);
-	//player.addImage(playerImage);
+	player.addImage(playerImage);
 }
 
 function draw() {
