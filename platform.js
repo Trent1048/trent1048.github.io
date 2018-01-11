@@ -31,7 +31,7 @@ function setup() {
 	}
 
 	player = createSprite(100, height-75, 50, 50);
-	player.addImage(playerImage);
+	//player.addImage(playerImage);
 }
 
 function draw() {
