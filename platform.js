@@ -74,6 +74,7 @@ function draw() {
 	if (random() > 0.95) {
 		obstacle = createSprite(camera.position.x + width, random(0, (height-50)-15), 30, 30);
 		obstacleSprites.add(obstacle);
+		obstacle.rotationSpeed = 4.0;
 		obstacle.addImage(obstacleImage);
 	}
 
