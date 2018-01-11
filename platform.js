@@ -10,7 +10,7 @@ var playerImage;
 var obstacleImage;
 
 function preload() {
-	playerImage = loadImage("trent1048.github.io/ship.png");
+	//playerImage = loadImage("trent1048.github.io/ship.png");
 	obstacleImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
 }
 
