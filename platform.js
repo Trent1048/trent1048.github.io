@@ -1,30 +1,37 @@
-var GRAVITY = 0.3;
-var JUMP = -5;
-var groundSprites;
 var GROUND_SPRITE_WIDTH = 50;
 var GROUND_SPRITE_HEIGHT = 50;
 var numGroundSprites;
 var player;
 var obstacleSprites;
+var obstacle
 var isGameOver;
 var score;
+var playerImage;
+var obstacleImage;
+
+function preload() {
+	playerImage = loadImage("trent1048.github.io/ship.png");
+	obstacleImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
+}
 
 function setup() {
 	isGameOver = false;
 	score = 0;
 
 	createCanvas(window.innerWidth, window.innerHeight);
-	background(150, 200, 250);
+	background(0, 0, 0);
 	groundSprites = new Group();
 	obstacleSprites = new Group();
 
 	numGroundSprites = width/GROUND_SPRITE_WIDTH + 1;
 	for (var n = 0; n < numGroundSprites; n++) {
 		var groundSprite = createSprite(n*50, height-25, GROUND_SPRITE_WIDTH, GROUND_SPRITE_HEIGHT);
+		groundSprite.shapeColor = color(0, 0, 0);
 		groundSprites.add(groundSprite);
 	}
 
 	player = createSprite(100, height-75, 50, 50);
+	player.addImage(playerImage);
 }
 
 function draw() {
@@ -35,7 +42,7 @@ function draw() {
     	text("Your score was:" + score, camera.position.x, camera.position.y - 20);
     	text("Game Over! Click anywhere to restart", camera.position.x, camera.position.y);
 	} else {
-	background(150, 200, 250)
+	background(0, 0, 0)
 	player.velocity.y = player.velocity.y + GRAVITY;
 
 	if (groundSprites.overlap(player)) {
@@ -62,8 +69,9 @@ function draw() {
 	}
 
 	if (random() > 0.95) {
-		var obstacle = createSprite(camera.position.x + width, random(0, (height-50)-15), 30, 30);
+		obstacle = createSprite(camera.position.x + width, random(0, (height-50)-15), 30, 30);
 		obstacleSprites.add(obstacle);
+		obstacle.addImage(obstacleImage);
 	}
 
 	var firstObstacle = obstacleSprites[0];
