@@ -24,7 +24,7 @@ function setup() {
 	score = 0;
 
 	createCanvas(window.innerWidth, window.innerHeight);
-	background(backgroundImage);
+	background(0, 0, 0);
 	groundSprites = new Group();
 	obstacleSprites = new Group();
 
