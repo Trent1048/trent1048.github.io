@@ -56,10 +56,14 @@ function draw() {
 	if (keyDown(UP_ARROW)) {
 		player.velocity.y = JUMP;
 	}
+		
+	if (keyDown(RIGHT_ARROW)) {
+		player.velocity = 2;
+	}
 
 	if (keyDown(UP_ARROW) && player.position.y < 0) {
     	isGameOver = true;
-    }
+    	}
 
 	player.position.x = player.position.x + 5;
 	camera.position.x = player.position.x + (width/4);
