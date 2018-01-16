@@ -11,10 +11,12 @@ var isGameOver;
 var score;
 var playerImage;
 var obstacleImage;
+var backgroundImage;
 
 function preload() {
 	playerImage = loadImage("trent1048.github.io/ship.png");
 	obstacleImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
+	backgroundImage = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Hyades.jpg/1200px-Hyades.jpg");
 }
 
 function setup() {
@@ -22,7 +24,7 @@ function setup() {
 	score = 0;
 
 	createCanvas(window.innerWidth, window.innerHeight);
-	background(0, 0, 0);
+	background(backgroundImage);
 	groundSprites = new Group();
 	obstacleSprites = new Group();
 
