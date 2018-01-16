@@ -47,7 +47,7 @@ function draw() {
     	text("Your score was:" + score, camera.position.x, camera.position.y - 20);
     	text("Game Over! Click anywhere to restart", camera.position.x, camera.position.y);
 	} else {
-	background(backgroundImage);
+	background(0, 0, 0);
 	player.velocity.y = player.velocity.y + GRAVITY;
 
 	if (groundSprites.overlap(player)) {
