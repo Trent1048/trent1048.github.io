@@ -16,7 +16,7 @@ var backgroundImage;
 function preload() {
 	playerImage = loadImage("trent1048.github.io/ship.png");
 	obstacleImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
-	backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png");
+	backgroundImage = loadImage("https://s3-us-west-2.amazonaws.com/i.cdpn.io/86939.BKJun.1ddac0a8-d1a3-4259-84d7-f59773c308c7.png");
 }
 
 function setup() {
@@ -24,7 +24,7 @@ function setup() {
 	score = 0;
 
 	createCanvas(window.innerWidth, window.innerHeight);
-	background(0, 0, 0);
+	background(backgroundImage);
 	groundSprites = new Group();
 	obstacleSprites = new Group();
 
