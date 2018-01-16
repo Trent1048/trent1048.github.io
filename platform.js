@@ -58,7 +58,8 @@ function draw() {
 	}
 		
 	if (keyDown(RIGHT_ARROW)) {
-		player.velocity = 2;
+		player.position.x = player.position.x + 10;
+		camera.position.x = player.position.x + (width/4);
 	}
 
 	if (keyDown(UP_ARROW) && player.position.y < 0) {
