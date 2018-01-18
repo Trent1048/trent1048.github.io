@@ -1,5 +1,6 @@
 var GRAVITY = 0.3;
 var JUMP = -5;
+var FALL = 5;
 var groundSprites;
 var GROUND_SPRITE_WIDTH = 50;
 var GROUND_SPRITE_HEIGHT = 50;
@@ -55,6 +56,10 @@ function draw() {
 
 	if (keyDown(UP_ARROW)) {
 		player.velocity.y = JUMP;
+	}
+		
+	if (keyDown(DOWN_ARROW)) {
+		player.velocity.y = FALL;
 	}
 		
 	if (keyDown(RIGHT_ARROW)){
