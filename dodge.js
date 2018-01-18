@@ -3,10 +3,12 @@ var player;
 var playerImage;
 var enemy;
 var enemyImage;
+var backgroundImage;
 
 function preload() {
   playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
   enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
+  backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png");
 }
 
 function setup() {
@@ -26,7 +28,7 @@ function draw() {
     if (enemy.overlap(player)) {
       isGameOver = true;
     }
-    background(0, 0, 0);
+    background(backgroundImage);
     if (keyDown(RIGHT_ARROW) && player.position.x < (width - (playerImage.width / 2))) {
       player.position.x += 5;
     }
