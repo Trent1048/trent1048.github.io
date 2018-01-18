@@ -66,7 +66,7 @@ function draw() {
             player.position.x = player.position.x + 20;
             camera.position.x = player.position.x + (width/4) + 20;
         }else {
-		player.position.x = player.position.x + 5;
+		player.position.x = player.position.x + 10;
 		camera.position.x = player.position.x + (width/4);
 	}
 
