@@ -55,11 +55,11 @@ function draw() {
 	}
 
 	if (keyDown(UP_ARROW)) {
-		player.velocity.y = JUMP;
+		player.position.y = JUMP;
 	}
 		
 	if (keyDown(DOWN_ARROW)) {
-		player.velocity.y = FALL;
+		player.position.y = FALL;
 	}
 		
 	if (keyDown(RIGHT_ARROW)){
