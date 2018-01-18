@@ -57,16 +57,18 @@ function draw() {
 		player.velocity.y = JUMP;
 	}
 		
-	if (keyDown(RIGHT_ARROW)) {
-		player.velocity.x = 5;
+	if (keyDown(RIGHT_ARROW)){
+            player.position.x = player.position.x + 20;
+            camera.position.x = player.position.x + (width/16) + 10;
+        }else {
+		player.position.x = player.position.x + 5;
+		camera.position.x = player.position.x + (width/4);
 	}
 
 	if (keyDown(UP_ARROW) && player.position.y < 0) {
     	isGameOver = true;
     	}
 
-	player.position.x = player.position.x + 5;
-	camera.position.x = player.position.x + (width/4);
 	var firstGroundSprite = groundSprites[0];
 
 	if (firstGroundSprite.position.x <= camera.position.x - (width/2 + firstGroundSprite.width/2)) {
