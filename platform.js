@@ -64,7 +64,7 @@ function draw() {
 		
 	if (keyDown(RIGHT_ARROW)){
             player.position.x = player.position.x + 20;
-            camera.position.x = player.position.x + (width/4) + 5;
+            camera.position.x = player.position.x + (width/4) + 20;
         }else {
 		player.position.x = player.position.x + 5;
 		camera.position.x = player.position.x + (width/4);
