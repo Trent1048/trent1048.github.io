@@ -1,4 +1,3 @@
-var GRAVITY = 0.3;
 var JUMP = -10;
 var FALL = 10;
 var groundSprites;
@@ -47,7 +46,6 @@ function draw() {
     	text("Game Over! Click anywhere to restart", camera.position.x, camera.position.y);
 	} else {
 	background(0, 0, 0);
-	//player.velocity.y = player.velocity.y + GRAVITY;
 
 	if (groundSprites.overlap(player)) {
 		player.velocity.y = 0;
@@ -64,7 +62,7 @@ function draw() {
 		
 	if (keyDown(RIGHT_ARROW)){
             player.position.x = player.position.x + 20;
-            camera.position.x = player.position.x + (width/4) + 20;
+            camera.position.x = player.position.x + (width/4);
         }else {
 		player.position.x = player.position.x + 10;
 		camera.position.x = player.position.x + (width/4);
