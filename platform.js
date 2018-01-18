@@ -1,6 +1,6 @@
 var GRAVITY = 0.3;
-var JUMP = -5;
-var FALL = 5;
+var JUMP = -10;
+var FALL = 10;
 var groundSprites;
 var GROUND_SPRITE_WIDTH = 50;
 var GROUND_SPRITE_HEIGHT = 50;
@@ -82,6 +82,13 @@ function draw() {
   		groundSprites.add(firstGroundSprite);
 	}
 
+	if (random() > 0.95) {
+		obstacle = createSprite(camera.position.x + width, random(0, (height-50)-15), 30, 30);
+		obstacleSprites.add(obstacle);
+		obstacle.rotationSpeed = 4.0;
+		obstacle.addImage(obstacleImage);
+	}
+		
 	if (random() > 0.95) {
 		obstacle = createSprite(camera.position.x + width, random(0, (height-50)-15), 30, 30);
 		obstacleSprites.add(obstacle);
