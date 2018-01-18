@@ -22,7 +22,7 @@ function setup() {
 	isGameOver = false;
 	score = 0;
 
-	createCanvas(window.innerWidth, window.innerHeight);
+	createCanvas(window.Width, window.Height);
 	background(0, 0, 0);
 	groundSprites = new Group();
 	obstacleSprites = new Group();
