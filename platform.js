@@ -68,7 +68,7 @@ function draw() {
 	}
 
 	if (keyDown(UP_ARROW) && player.position.y < 0) {
-    		player.position.y = height;
+    		player.position.y = window.innerwidth;
     	}
 
 	var firstGroundSprite = groundSprites[0];
