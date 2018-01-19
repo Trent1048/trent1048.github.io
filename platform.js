@@ -21,7 +21,7 @@ function setup() {
 	isGameOver = false;
 	score = 0;
 
-	createCanvas(window.outerWidth, window.outerHeight);
+	createCanvas(window.innnerWidth, window.innerHeight);
 	background(0, 0, 0);
 	groundSprites = new Group();
 	obstacleSprites = new Group();
