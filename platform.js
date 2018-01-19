@@ -64,7 +64,7 @@ function draw() {
 	}
 		
 	if (skySprites.overlap(player)) {
-		player.position.y = Height;
+		player.position.y = 100;
 	}
 
 	if (keyDown(UP_ARROW)) {
