@@ -1,9 +1,13 @@
 var JUMP = -10;
 var FALL = 10;
 var groundSprites;
+var skySprites;
 var GROUND_SPRITE_WIDTH = 50;
+var SKY_SPRITE_WIDTH = 50;
 var GROUND_SPRITE_HEIGHT = 50;
+var SKY_SPRITE_HEIGHT = 50;
 var numGroundSprites;
+var numSkySprites;
 var player;
 var obstacleSprites;
 var obstacle
@@ -24,6 +28,7 @@ function setup() {
 	createCanvas(window.innnerWidth, window.innerHeight);
 	background(0, 0, 0);
 	groundSprites = new Group();
+	skySprites = new Group();
 	obstacleSprites = new Group();
 
 	numGroundSprites = width/GROUND_SPRITE_WIDTH + 1;
@@ -31,6 +36,13 @@ function setup() {
 		var groundSprite = createSprite(n*50, height-25, GROUND_SPRITE_WIDTH, GROUND_SPRITE_HEIGHT);
 		groundSprite.shapeColor = color(0, 0, 0);
 		groundSprites.add(groundSprite);
+	}
+	
+	numSkySprites = width/SKY_SPRITE_WIDTH + 1;
+	for (var n = 0; n < numSkySprites; n++) {
+		var skySprite = createSprite(n*50, height-25, SKY_SPRITE_WIDTH, SKY_SPRITE_HEIGHT);
+		skySprite.shapeColor = color(0, 0, 0);
+		skySprites.add(skySprite);
 	}
 
 	player = createSprite(100, height-75, 50, 50);
@@ -50,6 +62,10 @@ function draw() {
 	if (groundSprites.overlap(player)) {
 		player.position.y = 0;
 	}
+		
+	if (skySprites.overlap(player)) {
+		player.position.y = Height;
+	}
 
 	if (keyDown(UP_ARROW)) {
 		player.position.y = player.position.y + JUMP;
@@ -67,16 +83,20 @@ function draw() {
 		camera.position.x = player.position.x + (width/4);
 	}
 
-	if (keyDown(UP_ARROW) && player.position.y < 0) {
-    		player.position.y = window.innerHeight;
-    	}
-
 	var firstGroundSprite = groundSprites[0];
 
 	if (firstGroundSprite.position.x <= camera.position.x - (width/2 + firstGroundSprite.width/2)) {
   		groundSprites.remove(firstGroundSprite);
   		firstGroundSprite.position.x = firstGroundSprite.position.x + numGroundSprites*firstGroundSprite.width;
   		groundSprites.add(firstGroundSprite);
+	}
+		
+	var firstSkySprite = skySprites[0];
+
+	if (firstSkySprite.position.x <= camera.position.x - (width/2 + firstSkySprite.width/2)) {
+  		skySprites.remove(firstSkySprite);
+  		firstSkySprite.position.x = firstSkySprite.position.x + numSkySprites*firstSkySprite.width;
+  		skySprites.add(firstSkySprite);
 	}
 
 	if (random() > 0.95) {
