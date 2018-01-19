@@ -48,8 +48,7 @@ function draw() {
 	background(0, 0, 0);
 
 	if (groundSprites.overlap(player)) {
-		player.velocity.y = 0;
-		player.position.y = (height-50) - (player.height/2);
+		player.position.y = 0;
 	}
 
 	if (keyDown(UP_ARROW)) {
@@ -69,7 +68,7 @@ function draw() {
 	}
 
 	if (keyDown(UP_ARROW) && player.position.y < 0) {
-    	isGameOver = true;
+    		player.position.y = height;
     	}
 
 	var firstGroundSprite = groundSprites[0];
