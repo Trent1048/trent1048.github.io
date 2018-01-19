@@ -40,7 +40,7 @@ function setup() {
 	
 	numSkySprites = width/SKY_SPRITE_WIDTH + 1;
 	for (var n = 0; n < numSkySprites; n++) {
-		var skySprite = createSprite(n*50, height-25, SKY_SPRITE_WIDTH, SKY_SPRITE_HEIGHT);
+		var skySprite = createSprite(n*50, 25, SKY_SPRITE_WIDTH, SKY_SPRITE_HEIGHT);
 		skySprite.shapeColor = color(0, 0, 0);
 		skySprites.add(skySprite);
 	}
