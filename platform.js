@@ -42,8 +42,8 @@ function setup() {
 	for (var n = 0; n < numSkySprites; n++) {
 		var skySprite = createSprite(n*50, 25, SKY_SPRITE_WIDTH, SKY_SPRITE_HEIGHT);
 		skySprite.shapeColor = color(0, 0, 0);
-		skySprites.add(skySprite);*/
-	}
+		skySprites.add(skySprite);
+	}*/
 
 	player = createSprite(100, height-75, 50, 50);
 	player.addImage(playerImage);
