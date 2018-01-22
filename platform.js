@@ -1,13 +1,13 @@
 var JUMP = -10;
 var FALL = 10;
 var groundSprites;
-//var skySprites;
+var skySprites;
 var GROUND_SPRITE_WIDTH = 50;
-//var SKY_SPRITE_WIDTH = 50;
+var SKY_SPRITE_WIDTH = 50;
 var GROUND_SPRITE_HEIGHT = 50;
-//var SKY_SPRITE_HEIGHT = 50;
+var SKY_SPRITE_HEIGHT = 50;
 var numGroundSprites;
-//var numSkySprites;
+var numSkySprites;
 var player;
 var obstacleSprites;
 var obstacle
@@ -28,7 +28,7 @@ function setup() {
 	createCanvas(window.innnerWidth, window.innerHeight);
 	background(0, 0, 0);
 	groundSprites = new Group();
-	//skySprites = new Group();
+	skySprites = new Group();
 	obstacleSprites = new Group();
 
 	numGroundSprites = width/GROUND_SPRITE_WIDTH + 1;
@@ -38,12 +38,12 @@ function setup() {
 		groundSprites.add(groundSprite);
 	}
 	
-	/*numSkySprites = width/SKY_SPRITE_WIDTH + 1;
+	numSkySprites = width/SKY_SPRITE_WIDTH + 1;
 	for (var n = 0; n < numSkySprites; n++) {
 		var skySprite = createSprite(n*50, 25, SKY_SPRITE_WIDTH, SKY_SPRITE_HEIGHT);
 		skySprite.shapeColor = color(0, 0, 0);
 		skySprites.add(skySprite);
-	}*/
+	}
 
 	player = createSprite(100, height-75, 50, 50);
 	player.addImage(playerImage);
@@ -63,9 +63,9 @@ function draw() {
 		player.position.y = 0;
 	}
 		
-	/*if (skySprites.overlap(player)) {
+	if (skySprites.overlap(player)) {
 		player.position.y = 100;
-	}*/
+	}
 
 	if (keyDown(UP_ARROW)) {
 		player.position.y = player.position.y + JUMP;
@@ -91,13 +91,13 @@ function draw() {
   		groundSprites.add(firstGroundSprite);
 	}
 		
-	/*var firstSkySprite = skySprites[0];
+	var firstSkySprite = skySprites[0];
 
 	if (firstSkySprite.position.x <= camera.position.x - (width/2 + firstSkySprite.width/2)) {
   		skySprites.remove(firstSkySprite);
   		firstSkySprite.position.x = firstSkySprite.position.x + numSkySprites*firstSkySprite.width;
   		skySprites.add(firstSkySprite);
-	}*/
+	}
 
 	if (random() > 0.95) {
 		obstacle = createSprite(camera.position.x + width, random(0, (height-50)-15), 30, 30);
@@ -139,6 +139,12 @@ function mouseClicked() {
     	var groundSprite = groundSprites[n];
     	groundSprite.position.x = n*50;
     }
+		
+    for (var n = 0; n < numSkySprites; n++) {
+    	var skySprite = skySprites[n];
+    	skySprite.position.x = n*50;
+    }
+
 
     player.position.x = 100;
     player.position.y = height-75;
