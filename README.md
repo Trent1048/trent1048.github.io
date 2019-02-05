@@ -1,3 +1,3 @@
-# trent1048.github.io/index.html
+# trent1048.github.io/
 
 This is my personal website
