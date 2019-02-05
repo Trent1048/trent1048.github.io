@@ -1,35 +1,56 @@
 body {
-  font-family: "Helvetica", Sans-Serif;
-  font-size: 20px;
+	background-color: white;
 }
-nav a {
+
+a {
 	text-decoration: none;
 }
-nav a:link {
+
+p, a, h2 {
 	color: white;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-nav a:visited {
-	color: #ffffff;
+
+div {
+	background-color: rgb(73, 73, 73);
+	margin: 0 auto;
+	width: 70%;
+	border-radius: 20px;
+	padding: 5px;
 }
-nav a:hover {
-	color: #CBC5CF;
+
+.rocket:hover {
+	background-image: url("imgs/rocket.PNG");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-nav li {
-	float: left;
-	width: 150px;
-	background-color: black;
-	border: 1px solid white;
-	padding: 4px;
-	margin: 4px;
-	text-align: center;
-	list-style: none;
+
+.throw:hover {
+	background-image: url("imgs/throw.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-nav ul {
-	z-index: 1;
-	list-style-type: none;
-	list-style: none;
-	display: inline-block;
-	position: fixed;
-	top: 0;
-	width: 100%;
+
+.aid:hover {
+	background-image: url("https://www.scouting.org/wp-content/uploads/2018/08/safety-moments-hero-wilderness-first-aid.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.FracCalc:hover {
+	background-image: url("imgs/FracCalc.PNG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.TicTac:hover {
+	background-image: url("imgs/TicTac.PNG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hang:hover {
+	background-image: url("imgs/hang.PNG");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
