@@ -6,6 +6,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: rgb(145, 145, 145);
+}
+
 p, a, h2 {
 	color: white;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
