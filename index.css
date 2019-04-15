@@ -21,40 +21,34 @@ div {
 	width: 70%;
 	border-radius: 20px;
 	padding: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .rocket:hover {
 	background-image: url("imgs/rocket.PNG");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .throw:hover {
 	background-image: url("imgs/throw.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .aid:hover {
 	background-image: url("https://www.scouting.org/wp-content/uploads/2018/08/safety-moments-hero-wilderness-first-aid.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .FracCalc:hover {
 	background-image: url("imgs/FracCalc.PNG");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .TicTac:hover {
 	background-image: url("imgs/TicTac.PNG");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .hang:hover {
 	background-image: url("imgs/hang.PNG");
-	background-repeat: no-repeat;
-	background-size: cover;
+}
+
+.hahnism:hover {
+	background-image: url("imgs/gruHahn.jpg");
 }
