@@ -23,14 +23,19 @@ div {
 	padding: 5px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
-.rocket:hover {
-	background-image: url("imgs/rocket.PNG");
+.toiletPaperTycoon:hover {
+	background-image: url("imgs/toiletPaperTycoon.PNG");
 }
 
 .seamonsters:hover {
 	background-image: url("imgs/seamonsters.PNG");
+}
+
+.rocket:hover {
+	background-image: url("imgs/rocket.PNG");
 }
 
 .FracCalc:hover {
