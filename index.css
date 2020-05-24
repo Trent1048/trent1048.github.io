@@ -34,6 +34,10 @@ div {
 	background-image: url("imgs/seamonsters.png");
 }
 
+.wordSearch:hover {
+	background-image: url("imgs/wordSearch.png");
+}
+
 .rocket:hover {
 	background-image: url("imgs/rocket.PNG");
 }
