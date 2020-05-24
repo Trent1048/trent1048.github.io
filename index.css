@@ -29,12 +29,8 @@ div {
 	background-image: url("imgs/rocket.PNG");
 }
 
-.throw:hover {
-	background-image: url("imgs/throw.png");
-}
-
-.aid:hover {
-	background-image: url("imgs/firstAid.jpg");
+.seamonsters:hover {
+	background-image: url("imgs/seamonsters.png");
 }
 
 .FracCalc:hover {
@@ -47,8 +43,4 @@ div {
 
 .hang:hover {
 	background-image: url("imgs/hang.PNG");
-}
-
-.hahnism:hover {
-	background-image: url("imgs/gruHahn.jpg");
 }
