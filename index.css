@@ -30,6 +30,10 @@ div {
 	background-image: url("imgs/toiletPaperTycoon.png");
 }
 
+.vroomVroomPlane:hover {
+	background-image: url("imgs/vroomVroomPlane.png");
+}
+
 .seamonsters:hover {
 	background-image: url("imgs/seamonsters.png");
 }
