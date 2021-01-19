@@ -13,6 +13,7 @@ a:hover {
 p, a, h2 {
 	color: white;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-shadow: -0.75px 0.75px 0 black, 0.75px 0.75px 0 black, 0.75px -0.75px 0 black, -0.75px -0.75px 0 black;
 }
 
 div {
