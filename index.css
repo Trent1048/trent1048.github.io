@@ -27,6 +27,11 @@ div {
 	background-position: center;
 }
 
+.cubeChaos:hover {
+	background-image: url("imgs/cubeChaos.png");
+
+}
+
 .toiletPaperTycoon:hover {
 	background-image: url("imgs/toiletPaperTycoon.png");
 }
