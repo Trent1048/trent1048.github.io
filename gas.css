@@ -1,0 +1,56 @@
+label {
+    font-size:5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(151, 151, 166);
+}
+button {
+    font-size:5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0.5vw solid rgb(68, 69, 89);
+    border-radius: 1vw;
+    background-color: rgb(40, 41, 54);
+    color: rgb(151, 151, 166);
+}
+input {
+    font-size:4vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0.5vw solid rgb(68, 69, 89);
+    border-radius: 1vw;
+    background-color: rgb(40, 41, 54);
+    color: rgb(151, 151, 166);
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="checkbox"] {
+    appearance: none;
+    margin: auto;
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    place-content: center;
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 4vw;
+    height: 4vw;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    background-color: rgb(76, 212, 26);
+    display: inline-block;
+}
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+div {
+    text-align: center;
+    margin: auto;
+}
+body {
+    background-color: rgb(40, 41, 54);
+}

@@ -3,22 +3,34 @@
 <html>
     <head>
         <title>Elevate Gas Calculator</title>
+        <link rel="stylesheet" href="gas.css">
+        <meta name="viewport" content="width=device-width">
     </head>
 
     <body>
-        <label for="mileInput">Miles driven:</label>
-        <input type="number" id="mileInput" placeholder="0" min="0">
+        <div>
+            <label for="mileInput">Miles driven:</label>
+            <input type="number" id="mileInput" placeholder="0" min="0">
+        </div>
         <br>
-        <label for="peopleIn">People:</label>
-        <input type="number" id="peopleIn" placeholder="1" min="0">
+        <div>
+            <label for="peopleIn">People:</label>
+            <input type="number" id="peopleIn" placeholder="1" min="0">
+        </div>
         <br>
-        <label for="dieselCheck">Diesel:</label>
-        <input type="checkbox" id="dieselCheck">
+        <div>
+            <label for="dieselCheck">Diesel:</label>
+            <input type="checkbox" id="dieselCheck">
+        </div>
         <br>
-        <button id="calcBtn">Calculate</button>
+        <div>
+            <button id="calcBtn">Calculate</button>
+        </div>
         <br>
-        <label for="result">Price:</label>
-        <input type="text" id="result" readonly>
+        <div>
+            <label for="result">Price:</label>
+            <input type="text" id="result" readonly>
+        </div>
 
         <script src="gas.js"></script>
     </body>
